@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NeruhomistDbDataSet" targetNamespace="http://tempuri.org/NeruhomistDbDataSet.xsd" xmlns:mstns="http://tempuri.org/NeruhomistDbDataSet.xsd" xmlns="http://tempuri.org/NeruhomistDbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="NeruhomistDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="NeruhomistDbConnectionString (Settings)" PropertyReference="ApplicationSettings.Stepovyi_IS_51_Neruhomist.Properties.Settings.GlobalReference.Default.NeruhomistDbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientsTableAdapter" GeneratorDataComponentClassName="ClientsTableAdapter" Name="Clients" UserDataComponentName="ClientsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NeruhomistDbConnectionString (Settings)" DbObjectName="Clients" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ПІБ, Телефон, Адреса, [Бажаний тип нерухомості], [Максисальний бюджет ($)] FROM Clients</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ПІБ" DataSetColumn="ПІБ" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Адреса" DataSetColumn="Адреса" />
+              <Mapping SourceColumn="Бажаний тип нерухомості" DataSetColumn="Бажаний тип нерухомості" />
+              <Mapping SourceColumn="Максисальний бюджет ($)" DataSetColumn="Максисальний бюджет ($)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ObjectsTableAdapter" GeneratorDataComponentClassName="ObjectsTableAdapter" Name="Objects" UserDataComponentName="ObjectsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NeruhomistDbConnectionString (Settings)" DbObjectName="Objects" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Місцезнаходження, [К-ксть кімнат], [Розмір(кв м)], [Вартість ($)] FROM Objects</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Місцезнаходження" DataSetColumn="Місцезнаходження" />
+              <Mapping SourceColumn="К-ксть кімнат" DataSetColumn="К-ксть кімнат" />
+              <Mapping SourceColumn="Розмір(кв м)" DataSetColumn="Розмір(кв м)" />
+              <Mapping SourceColumn="Вартість ($)" DataSetColumn="Вартість ($)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NeruhomistDbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NeruhomistDbDataSet" msprop:Generator_UserDSName="NeruhomistDbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Clients" msprop:Generator_TableClassName="ClientsDataTable" msprop:Generator_TableVarName="tableClients" msprop:Generator_TablePropName="Clients" msprop:Generator_RowDeletingName="ClientsRowDeleting" msprop:Generator_RowChangingName="ClientsRowChanging" msprop:Generator_RowEvHandlerName="ClientsRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientsRowDeleted" msprop:Generator_UserTableName="Clients" msprop:Generator_RowChangedName="ClientsRowChanged" msprop:Generator_RowEvArgName="ClientsRowChangeEvent" msprop:Generator_RowClassName="ClientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ПІБ" msprop:Generator_ColumnVarNameInTable="columnПІБ" msprop:Generator_ColumnPropNameInRow="ПІБ" msprop:Generator_ColumnPropNameInTable="ПІБColumn" msprop:Generator_UserColumnName="ПІБ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_UserColumnName="Телефон" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адреса" msprop:Generator_ColumnVarNameInTable="columnАдреса" msprop:Generator_ColumnPropNameInRow="Адреса" msprop:Generator_ColumnPropNameInTable="АдресаColumn" msprop:Generator_UserColumnName="Адреса" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Бажаний_x0020_тип_x0020_нерухомості" msprop:Generator_ColumnVarNameInTable="columnБажаний_тип_нерухомості" msprop:Generator_ColumnPropNameInRow="Бажаний_тип_нерухомості" msprop:Generator_ColumnPropNameInTable="Бажаний_тип_нерухомостіColumn" msprop:Generator_UserColumnName="Бажаний тип нерухомості" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Максисальний_x0020_бюджет_x0020__x0028__x0024__x0029_" msprop:Generator_ColumnVarNameInTable="_columnМаксисальний_бюджет____" msprop:Generator_ColumnPropNameInRow="_Максисальний_бюджет____" msprop:Generator_ColumnPropNameInTable="_Максисальний_бюджет____Column" msprop:Generator_UserColumnName="Максисальний бюджет ($)" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Objects" msprop:Generator_TableClassName="ObjectsDataTable" msprop:Generator_TableVarName="tableObjects" msprop:Generator_TablePropName="Objects" msprop:Generator_RowDeletingName="ObjectsRowDeleting" msprop:Generator_RowChangingName="ObjectsRowChanging" msprop:Generator_RowEvHandlerName="ObjectsRowChangeEventHandler" msprop:Generator_RowDeletedName="ObjectsRowDeleted" msprop:Generator_UserTableName="Objects" msprop:Generator_RowChangedName="ObjectsRowChanged" msprop:Generator_RowEvArgName="ObjectsRowChangeEvent" msprop:Generator_RowClassName="ObjectsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Місцезнаходження" msprop:Generator_ColumnVarNameInTable="columnМісцезнаходження" msprop:Generator_ColumnPropNameInRow="Місцезнаходження" msprop:Generator_ColumnPropNameInTable="МісцезнаходженняColumn" msprop:Generator_UserColumnName="Місцезнаходження" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="К-ксть_x0020_кімнат" msprop:Generator_ColumnVarNameInTable="_columnК_ксть_кімнат" msprop:Generator_ColumnPropNameInRow="_К_ксть_кімнат" msprop:Generator_ColumnPropNameInTable="_К_ксть_кімнатColumn" msprop:Generator_UserColumnName="К-ксть кімнат" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Розмір_x0028_кв_x0020_м_x0029_" msprop:Generator_ColumnVarNameInTable="_columnРозмір_кв_м_" msprop:Generator_ColumnPropNameInRow="_Розмір_кв_м_" msprop:Generator_ColumnPropNameInTable="_Розмір_кв_м_Column" msprop:Generator_UserColumnName="Розмір(кв м)" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вартість_x0020__x0028__x0024__x0029_" msprop:Generator_ColumnVarNameInTable="_columnВартість____" msprop:Generator_ColumnPropNameInRow="_Вартість____" msprop:Generator_ColumnPropNameInTable="_Вартість____Column" msprop:Generator_UserColumnName="Вартість ($)" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
